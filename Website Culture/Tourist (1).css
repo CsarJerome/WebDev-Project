@@ -1,0 +1,697 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+.column {
+    float: left;
+    width: 33.3%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 8px;
+}
+
+.about-section {
+    padding: 50px;
+    text-align: center;
+    background-color: #474e5d;
+    color: white;
+}
+
+.container {
+    padding: 0 16px;
+}
+
+.container::after,
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.title {
+    color: grey;
+}
+
+.button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+}
+
+.button:hover {
+    background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+    .column {
+        width: 100%;
+        display: block;
+    }
+}
+
+:root {
+    font-size: 16px;
+    font-family: 'Open Sans';
+    --text-primary: #bf4141;
+    --text-secondary: #ececec;
+    --bg-primary: #23232e;
+    --bg-secondary: #141418;
+    --transition-speed: 300ms;
+}
+
+body {
+    color: black;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+
+body::-webkit-scrollbar {
+    width: 0.25rem;
+}
+
+body::-webkit-scrollbar-track {
+    background: #1e1e24;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #6649b8;
+}
+
+main {
+    margin-left: 5rem;
+    padding: 1rem;
+}
+
+.navbar {
+    position: fixed;
+    /*kulay ng navbar*/
+    background-color: var(--text-secondary);
+    transition: width 600ms ease;
+    overflow: hidden;
+    z-index: 100;
+}
+
+.navbar-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+.nav-item {
+    width: 100%;
+}
+
+.nav-item:last-child {
+    margin-top: auto;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    height: 5rem;
+    /* etong color para sa text ng mga nasa nav*/
+    color: var(--text-primary);
+    text-decoration: none;
+    filter: grayscale(0%);
+    transition: var(--transition-speed);
+}
+
+.nav-link:hover {
+    filter: grayscale(0%) opacity(1);
+    background-color: white;
+    color: black;
+}
+
+.link-text {
+    display: none;
+    margin-left: 1rem;
+    color: solid black;
+}
+
+.nav-link svg {
+    width: 2rem;
+    min-width: 2rem;
+    margin: 0 1.5rem;
+}
+
+.fa-primary {
+    color: red;
+}
+
+.fa-secondary {
+    color: rgb(244, 62, 62);
+}
+
+.fa-primary,
+.fa-secondary {
+    transition: var(--transition-speed);
+}
+
+.logo {
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: var(--text-secondary);
+    background: var(--bg-secondary);
+    font-size: 1.5rem;
+    letter-spacing: 0.3ch;
+    width: 100%;
+}
+
+.logo svg {
+    transform: rotate(0deg);
+    transition: var(--transition-speed);
+}
+
+.logo-text {
+    display: inline;
+    position: absolute;
+    left: -999px;
+    transition: var(--transition-speed);
+}
+
+.navbar:hover .logo svg {
+    transform: rotate(-180deg);
+}
+
+
+/* Small screens RESPONSIVE */
+
+@media only screen and (max-width: 600px) {
+    .navbar {
+        bottom: 0;
+        width: 100vw;
+        height: 5rem;
+    }
+    .logo {
+        display: none;
+    }
+    .navbar-nav {
+        flex-direction: row;
+    }
+    .nav-link {
+        justify-content: center;
+    }
+    main {
+        margin: 0;
+    }
+}
+
+
+/* Large screens REPSONSIVE */
+
+@media only screen and (min-width: 600px) {
+    .navbar {
+        top: 0;
+        width: 5rem;
+        height: 100vh;
+    }
+    .navbar:hover {
+        width: 16rem;
+    }
+    .navbar:hover .link-text {
+        display: inline;
+    }
+    .navbar:hover .logo svg {
+        margin-left: 11rem;
+    }
+    .navbar:hover .logo-text {
+        left: 0px;
+    }
+}
+
+
+/*para sa body at container tags*/
+
+body {
+    background-color: linear-gradient(black, red);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+body {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    overflow-y: scroll;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.img {
+    width: 100px;
+    height: 100px;
+    padding-top: 25px;
+}
+
+
+/*eto para sa mga contents*/
+
+ :root {
+    --clr-primary-200: #f3eed9;
+    --clr-primary-400: white;
+    --clr-neutral-100: #fff;
+    --clr-neutral-900: #222c2a;
+    --ff-primary: "Roboto", sans-serif;
+    --ff-accent: "Playfair Display", serif;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--ff-primary);
+    font-weight: 400;
+    font-size: 1.3125rem;
+    line-height: 1.6;
+    background-image: url("abc");
+}
+
+body,
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+}
+
+h1,
+h2,
+h3 {
+    color: var(--clr-primary-400);
+    font-family: var(--ff-accent);
+    font-weight: 900;
+    line-height: 1;
+}
+
+h2,
+h3,
+p {
+    margin-bottom: 1em;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+p {
+    text-align: justify;
+}
+
+header,
+section {
+    padding: 4rem 0;
+    @media (min-width: 40em) {
+        header, section {
+            padding: 7rem 0;
+        }
+    }
+}
+
+.container {
+    margin-inline: auto;
+    width: min(90%, 70.5rem);
+}
+
+.split {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 40em) {
+    .split {
+        flex-direction: row;
+    }
+    .split>* {
+        flex-basis: 100%;
+    }
+    .split>*+* {
+        margin-left: 2em;
+    }
+}
+
+.container--narrow {
+    max-width: 34rem;
+}
+
+.bg-light {
+    background-color: var(--clr-primary-200);
+}
+
+.bg-primary {
+    color: var(--clr-neutral-100);
+    background-color: var(--clr-primary-400);
+}
+
+.bg-dark {
+    color: var(--clr-neutral-100);
+    background-color: var(--clr-neutral-900);
+}
+
+.bg-primary h2,
+.bg-dark h2 {
+    color: var(--clr-primary-200);
+}
+.footer {
+    background-color: #C23B21;
+    padding: 40px 12%;
+    text-align: right;
+}
+
+.footerh3 {
+    color: black;
+}
+.title
+{
+    text-align: center;
+}
+.title h
+{
+    font-family: 'Caveat Brush', cursive;
+    font-size: 500%;
+    color: #e69138;
+}
+.touristpage
+{
+    background-color: black;
+}
+/* Luzon */
+/*informationa*/
+.Luzon
+{
+    text-align: center;
+    font-size: 40px;
+    background-color: black;
+    color: white;
+    font-family: 'Koulen', cursive;
+}
+.Luzon hr
+{
+    width: 750px;
+}
+.informationa
+{
+    position: relative;
+    width: 100%;
+    display: flex
+}
+.informationa hr
+{
+    width: 400px;
+}
+.informationa .tourista
+{
+    background: #e69138;
+    padding: 100px;
+    width: 50%;
+}
+.informationa .tourista h
+{
+    text-align: center;
+    font-family: 'Caveat Brush', cursive;
+    font-weight: bold;
+    font-size: 40px;
+    color: black;
+}
+.informationa .tourista h1
+{    
+    color: black;
+    font-size: 20px;
+    text-align: justify;
+}
+.informationa .imageA
+{
+    background: url(shutterstock_634025597.jpg);
+    width: 50%;
+    background-size: cover;
+    background-position: center;
+}
+/*informationb*/
+.informationb
+{
+position: relative;
+    width: 100%;
+    display: flex
+}
+.informationb hr
+{
+    width: 400px;
+}
+.informationb .imageB
+{
+    background: url(palawan.jpg);
+    width: 50%;
+    background-size: cover;
+    background-position: center;
+}
+.informationb .touristb
+{
+    background: #e69138;
+    padding: 100px;
+    width: 50%;
+}
+.informationb .touristb h
+{
+    text-align: center;
+    font-family: 'Caveat Brush', cursive;
+    font-weight: bold;
+    font-size: 40px;
+    color: black;
+}
+.informationb .touristb h1
+{   
+    color: black;
+    font-size: 20px;
+    text-align: justify;
+}
+/* Visayas */
+.Visayas
+{
+    text-align: center;
+    font-size: 40px;
+    background-color: black;
+    color: white;
+    font-family: 'Koulen', cursive;
+}
+/*informationc*/
+.Visayas
+{
+    text-align: center;
+    font-size: 40px;
+    background-color: black;
+    color: white;
+    font-family: 'Koulen', cursive;
+}
+.Visayas hr
+{
+    width: 750px;
+}
+.informationc
+{
+    position: relative;
+    width: 100%;
+    display: flex
+}
+.informationc hr
+{
+    width: 400px;
+}
+.informationc .touristc
+{
+    background: #e69138;
+    padding: 100px;
+    width: 50%;
+}
+.informationc .touristc h
+{
+    text-align: center;
+    font-family: 'Caveat Brush', cursive;
+    font-weight: bold;
+    font-size: 40px;
+    color: black;
+}
+.informationc .touristc h1
+{    
+    color: black;
+    font-size: 20px;
+    text-align: justify;
+}
+.informationc .imagec
+{
+    background: url(hills.jpg);
+    width: 50%;
+    background-size: cover;
+    background-position: center;
+}
+/*informationd*/
+.informationd
+{
+position: relative;
+    width: 100%;
+    display: flex
+}
+.informationd hr
+{
+    width: 400px;
+}
+.informationd .imaged
+{
+    background: url(whitebeack.jpg);
+    width: 50%;
+    background-size: cover;
+    background-position: center;
+}
+.informationd .touristd
+{
+    background: #e69138;
+    padding: 100px;
+    width: 50%;
+}
+.informationd .touristd h
+{
+    text-align: center;
+    font-family: 'Caveat Brush', cursive;
+    font-weight: bold;
+    font-size: 40px;
+    color: black;
+}
+.informationd .touristd h1
+{   
+    color: black;
+    font-size: 20px;
+    text-align: justify;
+}
+/*Mindanao*/
+.Mindanao
+{
+    text-align: center;
+    font-size: 40px;
+    background-color: black;
+    color: white;
+    font-family: 'Koulen', cursive;
+}
+.Mindanao hr
+{
+    width: 750px;
+}
+/*informatione*/
+.informatione
+{
+    position: relative;
+    width: 100%;
+    display: flex
+}
+.informatione hr
+{
+    width: 400px;
+}
+.informatione .touriste
+{
+    background: #e69138;
+    padding: 100px;
+    width: 50%;
+}
+.informatione .touriste h
+{
+    text-align: center;
+    font-family: 'Caveat Brush', cursive;
+    font-weight: bold;
+    font-size: 40px;
+    color: black;
+}
+.informatione .touriste h1
+{    
+    color: black;
+    font-size: 20px;
+    text-align: justify;
+}
+.informatione .imagee
+{
+    background: url(cloud9.jpg);
+    width: 50%;
+    background-size: cover;
+    background-position: center;
+}
+/*informationf*/
+.informationf
+{
+    position: relative;
+    width: 100%;
+    display: flex
+}
+.informationf hr
+{
+    width: 400px;
+}
+.informationf .touristf
+{
+    background: #e69138;
+    padding: 100px;
+    width: 50%;
+}
+.informationf .touristf h
+{
+    text-align: center;
+    font-family: 'Caveat Brush', cursive;
+    font-weight: bold;
+    font-size: 40px;
+    color: black;
+}
+.informationf .touristf h1
+{    
+    color: black;
+    font-size: 20px;
+    text-align: justify;
+}
+.informationf .imagef
+{
+    background: url(eagle3.jpg);
+    width: 50%;
+    background-size: cover;
+    background-position: center;
+}
+
