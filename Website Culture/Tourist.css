@@ -85,7 +85,6 @@ html {
 body {
     color: black;
     background-color: black;
-    margin: 0;
     padding: 0;
 }
 
@@ -280,6 +279,19 @@ body::-webkit-scrollbar {
     padding-top: 25px;
 }
 
+.touristgif img {
+    position: absolute;
+    top: 0;
+    left: 6.27%;
+    right: 5%;
+    width: 92.65%;
+    height: 35.9%;
+    object-fit: cover;
+    z-index: -20;
+    background-position: center;
+    background-size: cover;
+}
+
 
 /*eto para sa mga contents*/
 
@@ -396,6 +408,7 @@ section {
 .bg-dark h2 {
     color: var(--clr-primary-200);
 }
+
 .footer {
     background-color: #C23B21;
     padding: 40px 12%;
@@ -405,293 +418,321 @@ section {
 .footerh3 {
     color: black;
 }
-.title
-{
+
+.touristpage {
+    padding: 80px 12%;
+    align-items: center;
+    background-position: center;
+    background-size: cover;
+}
+
+.touristpage img {
+    position: absolute;
+    top: 0;
+    left: 6.27%;
+    right: 5%;
+    width: 92.65%;
+    height: 35.9%;
+    object-fit: cover;
+    z-index: -20;
+    background-position: center;
+    background-size: cover;
+}
+
+.touristpage h1 {
     text-align: center;
+    font-size: 5rem;
 }
-.title h
-{
-    font-family: 'Caveat Brush', cursive;
-    font-size: 500%;
-    color: #e69138;
-}
-.touristpage
-{
-    background-color: black;
-}
+
+
 /* Luzon */
+
+
 /*informationa*/
-.Luzon
-{
+
+.Luzon {
     text-align: center;
     font-size: 40px;
     background-color: black;
     color: white;
     font-family: 'Koulen', cursive;
 }
-.Luzon hr
-{
+
+.Luzon hr {
     width: 750px;
 }
-.informationa
-{
+
+.informationa {
     position: relative;
     width: 100%;
     display: flex
 }
-.informationa hr
-{
+
+.informationa hr {
     width: 400px;
 }
-.informationa .tourista
-{
+
+.informationa .tourista {
     background: #e69138;
     padding: 100px;
     width: 50%;
 }
-.informationa .tourista h
-{
+
+.informationa .tourista h {
     text-align: center;
     font-family: 'Caveat Brush', cursive;
     font-weight: bold;
     font-size: 40px;
     color: black;
 }
-.informationa .tourista h1
-{    
+
+.informationa .tourista h1 {
     color: black;
     font-size: 20px;
     text-align: justify;
 }
-.informationa .imageA
-{
+
+.informationa .imageA {
     background: url(shutterstock_634025597.jpg);
     width: 50%;
     background-size: cover;
     background-position: center;
 }
+
+
 /*informationb*/
-.informationb
-{
-position: relative;
+
+.informationb {
+    position: relative;
     width: 100%;
     display: flex
 }
-.informationb hr
-{
+
+.informationb hr {
     width: 400px;
 }
-.informationb .imageB
-{
+
+.informationb .imageB {
     background: url(palawan.jpg);
     width: 50%;
     background-size: cover;
     background-position: center;
 }
-.informationb .touristb
-{
+
+.informationb .touristb {
     background: #e69138;
     padding: 100px;
     width: 50%;
 }
-.informationb .touristb h
-{
+
+.informationb .touristb h {
     text-align: center;
     font-family: 'Caveat Brush', cursive;
     font-weight: bold;
     font-size: 40px;
     color: black;
 }
-.informationb .touristb h1
-{   
+
+.informationb .touristb h1 {
     color: black;
     font-size: 20px;
     text-align: justify;
 }
+
+
 /* Visayas */
-.Visayas
-{
+
+.Visayas {
     text-align: center;
     font-size: 40px;
     background-color: black;
     color: white;
     font-family: 'Koulen', cursive;
 }
+
+
 /*informationc*/
-.Visayas
-{
+
+.Visayas {
     text-align: center;
     font-size: 40px;
     background-color: black;
     color: white;
     font-family: 'Koulen', cursive;
 }
-.Visayas hr
-{
+
+.Visayas hr {
     width: 750px;
 }
-.informationc
-{
+
+.informationc {
     position: relative;
     width: 100%;
     display: flex
 }
-.informationc hr
-{
+
+.informationc hr {
     width: 400px;
 }
-.informationc .touristc
-{
+
+.informationc .touristc {
     background: #e69138;
     padding: 100px;
     width: 50%;
 }
-.informationc .touristc h
-{
+
+.informationc .touristc h {
     text-align: center;
     font-family: 'Caveat Brush', cursive;
     font-weight: bold;
     font-size: 40px;
     color: black;
 }
-.informationc .touristc h1
-{    
+
+.informationc .touristc h1 {
     color: black;
     font-size: 20px;
     text-align: justify;
 }
-.informationc .imagec
-{
+
+.informationc .imagec {
     background: url(hills.jpg);
     width: 50%;
     background-size: cover;
     background-position: center;
 }
+
+
 /*informationd*/
-.informationd
-{
-position: relative;
+
+.informationd {
+    position: relative;
     width: 100%;
     display: flex
 }
-.informationd hr
-{
+
+.informationd hr {
     width: 400px;
 }
-.informationd .imaged
-{
+
+.informationd .imaged {
     background: url(whitebeack.jpg);
     width: 50%;
     background-size: cover;
     background-position: center;
 }
-.informationd .touristd
-{
+
+.informationd .touristd {
     background: #e69138;
     padding: 100px;
     width: 50%;
 }
-.informationd .touristd h
-{
+
+.informationd .touristd h {
     text-align: center;
     font-family: 'Caveat Brush', cursive;
     font-weight: bold;
     font-size: 40px;
     color: black;
 }
-.informationd .touristd h1
-{   
+
+.informationd .touristd h1 {
     color: black;
     font-size: 20px;
     text-align: justify;
 }
+
+
 /*Mindanao*/
-.Mindanao
-{
+
+.Mindanao {
     text-align: center;
     font-size: 40px;
     background-color: black;
     color: white;
     font-family: 'Koulen', cursive;
 }
-.Mindanao hr
-{
+
+.Mindanao hr {
     width: 750px;
 }
+
+
 /*informatione*/
-.informatione
-{
+
+.informatione {
     position: relative;
     width: 100%;
     display: flex
 }
-.informatione hr
-{
+
+.informatione hr {
     width: 400px;
 }
-.informatione .touriste
-{
+
+.informatione .touriste {
     background: #e69138;
     padding: 100px;
     width: 50%;
 }
-.informatione .touriste h
-{
+
+.informatione .touriste h {
     text-align: center;
     font-family: 'Caveat Brush', cursive;
     font-weight: bold;
     font-size: 40px;
     color: black;
 }
-.informatione .touriste h1
-{    
+
+.informatione .touriste h1 {
     color: black;
     font-size: 20px;
     text-align: justify;
 }
-.informatione .imagee
-{
+
+.informatione .imagee {
     background: url(cloud9.jpg);
     width: 50%;
     background-size: cover;
     background-position: center;
 }
+
+
 /*informationf*/
-.informationf
-{
+
+.informationf {
     position: relative;
     width: 100%;
     display: flex
 }
-.informationf hr
-{
+
+.informationf hr {
     width: 400px;
 }
-.informationf .touristf
-{
+
+.informationf .touristf {
     background: #e69138;
     padding: 100px;
     width: 50%;
 }
-.informationf .touristf h
-{
+
+.informationf .touristf h {
     text-align: center;
     font-family: 'Caveat Brush', cursive;
     font-weight: bold;
     font-size: 40px;
     color: black;
 }
-.informationf .touristf h1
-{    
+
+.informationf .touristf h1 {
     color: black;
     font-size: 20px;
     text-align: justify;
 }
-.informationf .imagef
-{
+
+.informationf .imagef {
     background: url(eagle3.jpg);
     width: 50%;
     background-size: cover;
     background-position: center;
 }
-
