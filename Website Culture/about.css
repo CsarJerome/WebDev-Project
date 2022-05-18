@@ -338,3 +338,10 @@ html {
         transition-delay: 0s !important;
     }
 }
+img {
+    transition: transform .2s;
+}
+
+img:hover {
+    transform: scale(1.05);
+}
