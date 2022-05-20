@@ -413,6 +413,7 @@ section {
   text-align: center; 
   font-family: 'Koulen', cursive; 
   padding-top: 20px;
+  -webkit-text-stroke: 2px #000;
 }
 .column {
     float: left;
