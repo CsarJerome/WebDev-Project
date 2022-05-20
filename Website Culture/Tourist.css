@@ -442,6 +442,7 @@ section {
 .touristpage h1 {
     text-align: center;
     font-size: 5rem;
+    -webkit-text-stroke: 2px #000;
 }
 
 
